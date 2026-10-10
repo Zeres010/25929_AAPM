@@ -1,0 +1,229 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_codigo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_edad",
+						"type": "uint256"
+					}
+				],
+				"name": "agregarAlumno",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "alumnos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "codigo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "edad",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_codigo",
+						"type": "uint256"
+					}
+				],
+				"name": "buscarAlumno",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "codigo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "edad",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_codigo",
+						"type": "uint256"
+					}
+				],
+				"name": "cambiarEdadAlumno",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indice",
+						"type": "uint256"
+					}
+				],
+				"name": "mostrarAlumno",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "codigo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indice",
+						"type": "uint256"
+					}
+				],
+				"name": "mostrarAlumno2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "codigo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "edad",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indice",
+						"type": "uint256"
+					}
+				],
+				"name": "mostrarAlumno3",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "codigo",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "nombre",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "edad",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Complejos_Struct.Alumno",
+						"name": "alumno",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/15_Complejos_Struct.sol": "Complejos_Struct"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/15_Complejos_Struct.sol": {
+			"keccak256": "0x2d054e7da1aa8018c7dbe9cf5db14bb2d8d2523ff19059daf674f207565fa6ee",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b86f29f1ebe33a68a2b8e5fc123bfedf38a860c3ccf8a2408ffb44adcf2ea35c",
+				"dweb:/ipfs/QmdLvhaGAmvs9VMT4RhjwZL6baoVEybvsrLFYU5J9C5Zf2"
+			]
+		}
+	},
+	"version": 1
+}
