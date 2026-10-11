@@ -20,4 +20,23 @@ contract Hospital259290 {
         posicion = _posicion;
         direccion = msg.sender;
     }
+
+    function agregarElemento(
+        uint256 _id,
+        string memory _nombre,
+        uint256 _edad,
+        string memory _diagnostico,
+        bool _estado
+    ) public {
+        require(_id % 2 == 0, "No se permiten id impares");
+        pacientes.push(Paciente(_id, _nombre, _edad, _diagnostico, _estado));
+    }
+
+    function contarElementos() public view returns (uint256) {
+        return pacientes.length;
+    }
+
+    function cambiarDireccion(address _direccion) public {
+        direccion = _direccion;
+    }
 }
