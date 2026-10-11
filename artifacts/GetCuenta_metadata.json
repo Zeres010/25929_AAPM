@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "codigo",
+						"type": "string"
+					}
+				],
+				"name": "obtenerCuenta",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/17_PC1_GetCuenta.sol": "GetCuenta"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/17_PC1_GetCuenta.sol": {
+			"keccak256": "0x010f609f8c08a8e75d6a072ec89794ade24f66241d89bb14824231603e940f7b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://66e4cfea7e10265aa49b6b09f492bfdd18fbfcff93d63e9b0b72b72261e325b8",
+				"dweb:/ipfs/QmWRo7ffpNZnUAFcL8CBqRARZMEFWFtCspjSr8qZS2zuaH"
+			]
+		}
+	},
+	"version": 1
+}

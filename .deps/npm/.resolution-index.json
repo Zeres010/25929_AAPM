@@ -195,11 +195,35 @@
       }
     }
   },
+  "contracts/19_Herencia.sol": {
+    "__sources__": {
+      "contracts/19_Herencia.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\ncontract Animal {\r\n    string public especie;\r\n\r\n    constructor(string memory _especie){\r\n        especie = _especie;\r\n    }\r\n\r\n    function hacerSonido() public pure virtual returns (string memory){\r\n        return \"????\";\r\n    }\r\n\r\n    function obtenerInfo() public view returns (string memory) {\r\n        return string.concat(\"La especie es:\", especie);\r\n    }\r\n}\r\n\r\ncontract Perro is Animal {\r\n    constructor() Animal (\"Perro\"){\r\n\r\n    }\r\n    function hacerSonido() public pure override returns (string memory) {\r\n        return \"Guau!\";\r\n    }\r\n}\r\n\r\ncontract Gato is Animal {\r\n    constructor() Animal (\"Gato\"){\r\n        \r\n    }\r\n}",
+        "file": "contracts/19_Herencia.sol"
+      }
+    }
+  },
+  "contracts/17_Niidea.sol": {
+    "__sources__": {
+      "contracts/17_Niidea.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.2 <0.9.0;\r\ncontract GetCuenta {\r\n    function obtenerCuenta(string memory codigo) public pure returns (uint256) {\r\n        return uint256(keccak256(abi.encodePacked(codigo))) % 15 + 1;\r\n    }\r\n}",
+        "file": "contracts/17_Niidea.sol"
+      }
+    }
+  },
   "contracts/16_Complejo_Mapping.sol": {
     "__sources__": {
       "contracts/16_Complejo_Mapping.sol": {
         "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\ncontract ComplejosMapping {\r\n\r\n    struct Alumno {\r\n        uint256 codigo;\r\n        string nombre;\r\n        uint256 edad;\r\n    }\r\n\r\n    mapping(uint256 => Alumno) private alumnos;\r\n    mapping(address => uint256) public saldoCuentas;\r\n\r\n    function agregarAlumno(uint256 _codigo, string memory _nombre, uint256 _edad) public {\r\n        //alumnos.push(Alumno(_codigo, _nombre, _edad));\r\n        alumnos[_codigo] = Alumno(_codigo, _nombre, _edad);\r\n    }\r\n\r\n    function obtenerEmpleado(uint256 _codigo) public view returns(uint256 Codigo, string memory Nombre, uint256 Edad) {\r\n        Alumno memory al = alumnos[_codigo];\r\n        //require(al.codigo != 0, \"Alumno no encontrado\");\r\n        return(al.codigo, al.nombre, al.edad);\r\n    }\r\n\r\n    function asignarmeSoles(uint256 _monto) public {\r\n        saldoCuentas[msg.sender] = _monto;\r\n    }\r\n\r\n    function sumarmeSoles(uint256 _monto) public {\r\n        saldoCuentas[msg.sender] = saldoCuentas[msg.sender] + _monto;\r\n    }\r\n}",
         "file": "contracts/16_Complejo_Mapping.sol"
+      }
+    }
+  },
+  "contracts/17_PC1_GetCuenta.sol": {
+    "__sources__": {
+      "contracts/17_PC1_GetCuenta.sol": {
+        "content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.2 <0.9.0;\r\ncontract GetCuenta {\r\n    function obtenerCuenta(string memory codigo) public pure returns (uint256) {\r\n        return uint256(keccak256(abi.encodePacked(codigo))) % 15 + 1;\r\n    }\r\n}",
+        "file": "contracts/17_PC1_GetCuenta.sol"
       }
     }
   }
