@@ -39,4 +39,23 @@ contract Hospital259290 {
     function cambiarDireccion(address _direccion) public {
         direccion = _direccion;
     }
+
+    function mostrarActivos() public view {
+        console.log("Ejecutado por 259290 - Alexander Prieto Melendez");
+        for (uint256 i = 0; i < pacientes.length; i++) {
+            if (pacientes[i].estado) {
+                console.log("Paciente activo:", pacientes[i].id, pacientes[i].nombre);
+            }
+        }
+    }
+
+    function inactivarEstado(uint256 _id) public {
+        for (uint256 i = 0; i < pacientes.length; i++) {
+            if (pacientes[i].id == _id) {
+                pacientes[i].estado = false;
+                return;
+            }
+        }
+        revert("Paciente no encontrado");
+    }
 }

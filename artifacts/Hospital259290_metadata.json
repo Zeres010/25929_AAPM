@@ -92,6 +92,26 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "inactivarEstado",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mostrarActivos",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
@@ -169,11 +189,11 @@
 	},
 	"sources": {
 		"contracts/18_PC1_Examen.sol": {
-			"keccak256": "0x24d6985673dca26b1dd7f199fece3a4a0f5d7953fb6dee2ac8f933f5c5d68fd9",
+			"keccak256": "0x0cdb81ad1e9df0c018df14c3d3f5e15fdb8571745508be138bf1b92328fa1cca",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ec0f34c76f2774a7442b1f569cd9fe5113a56d6170bc49c594814631aa36c316",
-				"dweb:/ipfs/QmNxahjpXJCJG72vMPxVrhtY8FTKWo2gi7MZuyh6QjVs7X"
+				"bzz-raw://ee6ea7fd139340b627ea1311422d95a667026cc550bc13a0fe007326455a6669",
+				"dweb:/ipfs/QmZFx8TkrZH1xXjV5kkvFEH8vUM5c7DUT2mc1UxtVDKQkh"
 			]
 		},
 		"hardhat/console.sol": {
