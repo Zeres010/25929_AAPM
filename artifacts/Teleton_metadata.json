@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "depositar",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retirar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/21_Teleton.sol": "Teleton"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/21_Teleton.sol": {
+			"keccak256": "0x67102d74d90b7525979e22e2ae3a14f9c2858a4d422083438da15e1cf339b07b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4ade93fc3daf0363c1261769eab24d62a7734d2047d4b288c3fe24493840bf73",
+				"dweb:/ipfs/QmUGFbTgcEY5jdmJejUAqiKHNfBPTtYDTiaHfpqXuQ7woX"
+			]
+		}
+	},
+	"version": 1
+}
